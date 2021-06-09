@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="5dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    app:layout_constraintCircleRadius="4sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rprofilepic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/profile_circular_border_imageview"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Nome"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/remail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Nome"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
